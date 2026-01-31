@@ -257,3 +257,77 @@ input[type="number"] {
     text-decoration: none;
     box-shadow: 0 5px 15px rgba(0,0,0,0.3);
 }
+
+/* ======================
+   RESPONSIVE - MÓVILES
+====================== */
+
+@media (max-width: 768px) {
+
+    .header h1 {
+        font-size: 2rem;
+    }
+
+    .nav {
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    .nav a {
+        font-size: 0.95rem;
+    }
+
+    .grid-productos {
+        grid-template-columns: 1fr;
+    }
+
+    .producto img {
+        height: 200px;
+    }
+
+    .carrito {
+        padding: 15px;
+    }
+
+    table, thead, tbody, th, td, tr {
+        display: block;
+    }
+
+    thead {
+        display: none;
+    }
+
+    tbody tr {
+        background: #fff;
+        margin-bottom: 15px;
+        border-radius: 12px;
+        padding: 10px;
+        box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+    }
+
+    td {
+        display: flex;
+        justify-content: space-between;
+        padding: 8px 0;
+    }
+
+    td::before {
+        content: attr(data-label);
+        font-weight: bold;
+        color: #78350f;
+    }
+
+    .finalizar {
+        font-size: 1rem;
+    }
+}
+
+/* BOTÓN WHATSAPP EN MÓVIL */
+@media (max-width: 480px) {
+    .whatsapp {
+        bottom: 15px;
+        right: 15px;
+        font-size: 1.5rem;
+        padding: 12px;
+    }
+}
