@@ -53,18 +53,21 @@ function mostrarCarrito() {
     carrito.forEach(item => {
         total += item.precio * item.cantidad;
 
-        lista.innerHTML += `
-            <tr>
-                <td>${item.nombre}</td>
-                <td>
-                    <input type="number" min="1" value="${item.cantidad}"
-                    onchange="cambiarCantidad('${item.nombre}', this.value)">
-                </td>
-                <td>$${item.precio * item.cantidad}</td>
-                <td>
-                    <button class="eliminar" onclick="eliminarProducto('${item.nombre}')">X</button>
-                </td>
-            </tr>
+        
+            lista.innerHTML += `
+<tr>
+    <td data-label="Producto">${item.nombre}</td>
+    <td data-label="Cantidad">
+        <input type="number" min="1" value="${item.cantidad}"
+        onchange="cambiarCantidad('${item.nombre}', this.value)">
+    </td>
+    <td data-label="Precio">$${item.precio * item.cantidad}</td>
+    <td data-label="Eliminar">
+        <button class="eliminar" onclick="eliminarProducto('${item.nombre}')">X</button>
+    </td>
+</tr>
+`;
+
         `;
     });
 
