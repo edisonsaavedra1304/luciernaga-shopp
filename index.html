@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Luciérnaga Shopp | Joyería y Moda</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<a class="whatsapp" href="https://wa.me/595991374144" target="_blank">💬</a>
+
+<body>
+
+    <header class="header">
+        <h1>✨ Luciérnaga Shopp ✨</h1>
+        <p>Joyas, accesorios y moda que iluminan tu estilo</p>
+    </header>
+
+    <nav class="nav">
+        <a href="#">Inicio</a>
+        <a href="#">Joyas</a>
+        <a href="#">Accesorios</a>
+        <a href="#">Moda</a>
+        <a href="#">Contacto</a>
+    </nav>
+
+
+
+
+<section class="productos">
+    <h2>Nuestros Productos</h2>
+
+    <div class="grid-productos">
+
+        <div class="producto">
+            <img src="https://via.placeholder.com/400x300" alt="Collar Dorado">
+            <div class="producto-info">
+                <h3>Collar Dorado</h3>
+                <p class="precio">$25</p>
+                <button onclick="agregarAlCarrito('Collar Dorado', 25)">
+                    Agregar al carrito
+                </button>
+            </div>
+        </div>
+
+        <div class="producto">
+            <img src="https://via.placeholder.com/400x300" alt="Pulsera Elegante">
+            <div class="producto-info">
+                <h3>Pulsera Elegante</h3>
+                <p class="precio">$15</p>
+                <button onclick="agregarAlCarrito('Pulsera Elegante', 15)">
+                    Agregar al carrito
+                </button>
+            </div>
+        </div>
+
+        <div class="producto">
+            <img src="https://via.placeholder.com/400x300" alt="Bolso de Moda">
+            <div class="producto-info">
+                <h3>Bolso de Moda</h3>
+                <p class="precio">$40</p>
+                <button onclick="agregarAlCarrito('Bolso de Moda', 40)">
+                    Agregar al carrito
+                </button>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+
+
+<section id="carrito" class="carrito">
+    <h2>🛒 Carrito de compras</h2>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Producto</th>
+                <th>Cantidad</th>
+                <th>Precio</th>
+                <th>Eliminar</th>
+            </tr>
+        </thead>
+        <tbody id="lista-carrito"></tbody>
+    </table>
+
+    <p class="total">Total: $<span id="total">0</span></p>
+
+    <button class="finalizar" onclick="finalizarCompra()">Finalizar compra</button>
+</section><footer class="footer">
+    <p>© 2026 Luciérnaga Shopp</p>
+</footer>
+
+<script src="script.js"></script>
+
+    <footer class="footer">
+        <p>© 2026 Luciérnaga Shopp | Todos los derechos reservados</p>
+    </footer>
+
+</body>
+</html>
